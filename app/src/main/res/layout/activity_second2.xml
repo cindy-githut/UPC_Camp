@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.upc.upc_camp.SecondActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/welcome"
+                android:layout_margin="16dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/description"
+                android:text="Let us tell you more about UPC Youth Camps"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:layout_marginEnd="16dp"
+                android:text="This is where Active young people from across the district meet to share love, experiences,wisdom and knowledge. As we come together in one accord,in one mind, we praise together,worship together,eat together and play together. Experience the presence of God as invited speakers pour out their hearts, Enjoy the exciting and thrilling vibe as we compete in various sports, connect and make new friends as we socialize daily...whether you are an introvert or an extrovert,you have a place with us. We diverse,we focused,we love,we enjoy,we are one,we are UPC Youth and we invite you..:)"/>
+
+            <HorizontalScrollView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/txtbirthday"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/multiplePhotosScrol">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/multiphotoslayout" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ok"
+                android:text="Click GOING to start your trip count down or not going and tell let us know why "
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not going"
+                    android:layout_weight="0.5"
+                    android:textAllCaps="false"
+                    android:id="@+id/notgoing"
+                    android:layout_gravity="center_horizontal|top"
+                    android:background="@drawable/green_button"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="16dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Interested"
+                    android:layout_weight="0.5"
+                    android:textAllCaps="false"
+                    android:id="@+id/interested"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal|top"
+                    android:background="@drawable/green_button"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#fff"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="16dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Going"
+                    android:layout_weight="0.5"
+                    android:textAllCaps="false"
+                    android:id="@+id/going"
+                    android:layout_gravity="center_horizontal|top"
+                    android:background="@drawable/green_button"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#fff"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="16dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.upc.upc_camp.NotGoingActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rr"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <EditText
+        android:layout_below="@+id/rr"
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:inputType="textMultiLine"
+        android:gravity="left"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:hint="Let us know why you not going"
+        android:ems="10"
+        android:background="@drawable/post_card"
+        android:textColorHint="@color/gray_300"
+        android:id="@+id/txtUserProblem"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="16dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/txtUserProblem"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="36dp"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:layout_gravity="left"
+            android:id="@+id/btnCancelHelp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/gray_border"
+            android:textSize="14dp" />
+
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="36dp"
+            android:text="Report"
+            android:layout_alignParentRight="true"
+            android:textAllCaps="false"
+            android:id="@+id/btnReportHelp"
+            android:layout_gravity="left"
+            android:background="@drawable/green_button"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
